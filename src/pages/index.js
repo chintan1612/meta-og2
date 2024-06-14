@@ -1,5 +1,6 @@
-import { FRONT_END_DOMAIN } from "@/constant";
+// import { FRONT_END_DOMAIN } from "@/constant";
 import Head from "next/head";
+const FRONT_END_DOMAIN = 'https://meta-og2.vercel.app/'; // Replace with your domain
 const title = 'BITMATIC ART';
 const description = 'Your Page Description';
 const imgUrl = 'https://d17ha18jyelis7.cloudfront.net/collections/originals/16395541-68bd-4f66-a581-6528fb9ffbf4-1705050528582';
