@@ -1,6 +1,6 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import PageTitle from "@/components/Common/PageTitle";
-import Head from "next/head";
+// import Head from "next/head";
 const projectTitle='TesseractX'
 const FRONT_END_DOMAIN = 'https://meta-og2.vercel.app/'; // Replace with your domain
 const title = 'BITMATIC ART';
