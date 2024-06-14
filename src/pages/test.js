@@ -11,7 +11,7 @@ const imageURL = `${FRONT_END_DOMAIN}/api/og?title=${title}&description=${descri
 
 
 console.log('imageURL', imageURL)
-function TestPage() {
+function testPage() {
     return (
         <>
             <Head>
@@ -19,12 +19,12 @@ function TestPage() {
                 <title>Test</title>
                 <meta name="description" content={description} />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content={FRONT_END_DOMAIN} />
+                <meta property="og:url" content={FRONT_END_DOMAIN + '/test'}  />
                 <meta property="og:title" content={title} />
                 <meta property="og:description" content={description} />
                 <meta property="og:image" content={imageURL} />
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta property="twitter:url" content={FRONT_END_DOMAIN} />
+                <meta property="twitter:url" content={FRONT_END_DOMAIN + '/test'} />
                 <meta property="twitter:title" content={title} />
                 <meta property="twitter:description" content={description} />
                 <meta property="twitter:image" content={imageURL} />
@@ -37,4 +37,4 @@ function TestPage() {
     );
 }
 
-export default TestPage;
+export default testPage;
