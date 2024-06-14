@@ -8,10 +8,10 @@ const BASE_TITLE = "TesseractX";
 
 export default function PageTitle({
     title = "TesseractX",
-    description = "dummy PageTitle",
-    imageUrl = "https://statinfer.com/wp-content/uploads/dummy-user.png",
+    description = "",
+    imageUrl = "",
     id = "",
-    coverUrl = "https://statinfer.com/wp-content/uploads/dummy-user.png",
+    coverUrl = "",
 }) {
     // useEffect(() => {
     //     window.document.title = `${BASE_TITLE} - ${title}`;
