@@ -7,7 +7,7 @@ const title = 'BITMATIC ART';
 const description = 'Your Page Description';
 const imgUrl = 'https://d17ha18jyelis7.cloudfront.net/collections/originals/16395541-68bd-4f66-a581-6528fb9ffbf4-1705050528582';
 
-const imageURL = `${FRONT_END_DOMAIN}/api/og?title=${encodeURIComponent(title)}&description=${encodeURIComponent(description)}&imageUrl=${encodeURIComponent(imgUrl)}`;
+const imageURL = `${FRONT_END_DOMAIN}/api/og?title=${title}&description=${description}&imageUrl=${imgUrl}`;
 
 
 console.log('imageURL', imageURL)
