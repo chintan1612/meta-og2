@@ -35,18 +35,18 @@ export default function App({ Component, pageProps }) {
 
 
 	return (
-		<WalletProvider >
-			    <ThemeProvider attribute="class">
-			<Provider store={store}>
-				<IntercomProvider appId="j5rgglth">
-					<Layout>
-						<Guard>
-							<Component {...pageProps} />
-						</Guard>
-					</Layout>
-				</IntercomProvider>
-			</Provider>
-			</ThemeProvider>
-		</WalletProvider>
+		<Component {...pageProps} />
+		// <WalletProvider >
+		// 	    <ThemeProvider attribute="class">
+		// 	<Provider store={store}>
+		// 		<IntercomProvider appId="j5rgglth">
+		// 			<Layout>
+		// 				<Guard>
+		// 				</Guard>
+		// 			</Layout>
+		// 		</IntercomProvider>
+		// 	</Provider>
+		// 	</ThemeProvider>
+		// </WalletProvider>
 	);
 }
