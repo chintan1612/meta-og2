@@ -11,7 +11,7 @@ export default function PageTitle({
     description = "dummy PageTitle",
     imageUrl = "https://statinfer.com/wp-content/uploads/dummy-user.png",
     id = "",
-    coverUrl = "",
+    coverUrl = "https://statinfer.com/wp-content/uploads/dummy-user.png",
 }) {
     // useEffect(() => {
     //     window.document.title = `${BASE_TITLE} - ${title}`;
