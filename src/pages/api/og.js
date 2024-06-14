@@ -6,9 +6,19 @@ export const config = {
 
 export default function handler(req) {
     const { searchParams } = new URL(req.url);
-    const title = searchParams.get("title") || "#BITMATIC ART";
-    const imageUrl = searchParams.get("imageUrl") || "https://hextoymedia.s3.us-east-1.amazonaws.com/collections/lows/86204875-32e0-4e58-a702-0f55a1befffa-1718267220803";
-    const coverUrl = "https://hextoymedia.s3.us-east-1.amazonaws.com/collections/banners/273488de-5f34-4b2f-a621-d352d6e7a4f6-1718222813018";
+    const hasTitle = searchParams.has("title");
+    const hasImageUrl = searchParams.has("imageUrl");
+    const title = hasTitle ? searchParams.get("title") : "#BITMATIC ART";
+    const imageUrl = hasImageUrl
+        ? searchParams.get("imageUrl")
+        : "https://hextoymedia.s3.us-east-1.amazonaws.com/collections/lows/86204875-32e0-4e58-a702-0f55a1befffa-1718267220803";
+    const coverUrl =
+        "https://hextoymedia.s3.us-east-1.amazonaws.com/collections/banners/273488de-5f34-4b2f-a621-d352d6e7a4f6-1718222813018";
+    const logoUrl = "https://dev.tesseractx.com/images/logo-light.svg";
+    // const { searchParams } = new URL(req.url);
+    // const title = searchParams.get("title") || "#BITMATIC ART";
+    // const imageUrl = searchParams.get("imageUrl") || "https://hextoymedia.s3.us-east-1.amazonaws.com/collections/lows/86204875-32e0-4e58-a702-0f55a1befffa-1718267220803";
+    // const coverUrl = "https://hextoymedia.s3.us-east-1.amazonaws.com/collections/banners/273488de-5f34-4b2f-a621-d352d6e7a4f6-1718222813018";
 
     console.log('title', title);
     console.log('imageUrl', imageUrl)
