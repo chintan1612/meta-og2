@@ -1,5 +1,6 @@
 // import { FRONT_END_DOMAIN } from "@/constant";
 import Head from "next/head";
+const projectTitle='TesseractX'
 const FRONT_END_DOMAIN = 'https://meta-og2.vercel.app/'; // Replace with your domain
 const title = 'BITMATIC ART';
 const description = 'Your Page Description';
@@ -13,12 +14,8 @@ function HomePage() {
     return (
         <>
             <Head>
-                <title>TesseractX</title>
-                <meta
-                    name="description"
-                    content="TesseractX is the ultimate NFT marketplace on PulseChain, offering generous rewards. Buy, sell, and trade unique digital collectibles!"
-                />
-                {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
+                <title>{projectTitle}</title>
+                <meta name="description" content={description} />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content={FRONT_END_DOMAIN} />
                 <meta property="og:title" content={title} />
