@@ -15,6 +15,11 @@ export default function Document() {
       <Head>
         <link rel="icon" href="/FavLogo.ico" />
         <link rel="manifest" href="/manifest.json" />
+        <PageTitle
+                title={projectTitle}
+                imageUrl={imageURL}
+                description={description}
+            />
         <script
           src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js"
           async=""
