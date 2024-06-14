@@ -19,17 +19,17 @@ function HomePage() {
                     name="description"
                     content="TesseractX is the ultimate NFT marketplace on PulseChain, offering generous rewards. Buy, sell, and trade unique digital collectibles!"
                 />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content={FRONT_END_DOMAIN} />
                 <meta property="og:title" content="Your Title" />
                 <meta property="og:description" content="Your Description" />
-                <meta property="og:image" content={imgUrl} />
+                <meta property="og:image" content={imageURL} />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta property="twitter:url" content={FRONT_END_DOMAIN} />
                 <meta property="twitter:title" content="Your Title" />
                 <meta property="twitter:description" content="Your Description" />
-                <meta property="twitter:image" content={imgUrl} />
+                <meta property="twitter:image" content={imageURL} />
             </Head>
             <div>
                 Your Content Here
