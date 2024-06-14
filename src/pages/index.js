@@ -18,7 +18,7 @@ function HomePage() {
             <PageTitle
                 title={projectTitle}
                 imageUrl={imageURL}
-                id={collectionDetails?._id}
+                id={1612199}
             />
                 <meta name="description" content={description} />
                 <meta property="og:type" content="website" />
