@@ -22,6 +22,7 @@ function HomePage() {
                 imageUrl={collectionDetails?.image}
                 id={collectionDetails?._id}
             /> */}
+                
                 <meta name="description" content={description} />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content={FRONT_END_DOMAIN} />
